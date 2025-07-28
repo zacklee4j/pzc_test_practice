@@ -4,17 +4,8 @@ const {
   loadFixture, 
   time 
 } = require('@nomicfoundation/hardhat-toolbox/network-helpers');
+const myTokenTestData = require("./testdata/myToken");
 
-const myTokenTestData = {
-  init_token:100,
-  trans_balance : 1n * 10n ** 18n,
-  total_balance : 100n * 10n ** 18n,
-  over_balance : 1000n * 10n ** 18n,
-  mint_balance : 100n * 10n ** 18n,
-  approve_balance : 10n * 10n ** 18n,
-  smallAmount : 50n * 10n ** 18n,
-  largeAmount : 1000n * 10n ** 18n
-}
 
 describe("MyToken", function () {
     // 部署合约的fixture
